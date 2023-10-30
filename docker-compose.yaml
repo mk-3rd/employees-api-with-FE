@@ -15,7 +15,7 @@ services:
       - DB_DATABASE=employees
       - DB_USER=root
       - DB_PASSWORD=password
-    command: npm start
+    command: npm run start-with-db
     depends_on:
       - mysql
       - redis

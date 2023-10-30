@@ -7,7 +7,9 @@
         "db:create": "ts-node scripts/create-db",
         "db:migrate": "ts-node scripts/migrate-db",
         "db:seed": "ts-node scripts/seed-db",
-        "db:setup": "npm run db:create && npm run db:migrate && npm run db:seed"
+        "db:wait": "ts-node scripts/wait-db",
+        "db:setup": "npm run db:create && npm run db:migrate && npm run db:seed",
+        "start-with-db": "npm run db:wait && npm run db:setup && npm start"
     },
     "devDependencies": {
         "@types/jest": "^29.5.5",
